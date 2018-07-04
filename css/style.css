@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background: red url(../wall.png) no-repeat center center;
+    background-size: cover;
+}
 a {
     text-decoration: none;
 }
@@ -24,6 +28,10 @@ kbd:hover > button {
 }
 main {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 #mainxxx {
     display: inline-block;
@@ -53,4 +61,8 @@ main {
 }
 .row .key {
     margin: 0 8px;
+}
+.wrapper {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
 }
