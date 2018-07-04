@@ -38,7 +38,10 @@
         index2 = 0
         while(index2< row['length']){ //0~9 0~8 0~6
             kbdxxx = document.createElement('kbd')
-            kbdxxx.textContent = row[index2]
+            span = document.createElement('span')
+            span.textContent = row[index2]
+            span.className = 'text'
+            kbdxxx.appendChild(span)
             kbdxxx.className = 'key'
             buttonx = document.createElement('button')
             buttonx.textContent = '编辑'
