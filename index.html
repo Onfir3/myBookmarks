@@ -43,6 +43,8 @@
             buttonx = document.createElement('button')
             buttonx.textContent = '编辑'
             buttonx.id = row[index2]
+            imgxxx = document.createElement('img')
+            imgxxx.src ='http://'+hash[row[index2]]+ '/favicon.ico'
             buttonx.onclick = function(qweasd){
                 // qweasd['target']就是用户点击的元素
                 key = qweasd['target']['id']// q w e r ..
@@ -51,6 +53,7 @@
                 localStorage.setItem('zzz',JSON.stringify(hash))
                 console.log(hash)
             }
+            kbdxxx.appendChild(imgxxx)
             kbdxxx.appendChild(buttonx)
             divxxx.appendChild(kbdxxx)
             index2 = index2 + 1
